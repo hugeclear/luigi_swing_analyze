@@ -1,0 +1,30 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* モバイル最適化 */
+@media (max-width: 768px) {
+  #root {
+    padding: 0;
+  }
+  
+  .App {
+    padding: 0;
+  }
+}
+
+/* タッチデバイス最適化 */
+@media (hover: none) {
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

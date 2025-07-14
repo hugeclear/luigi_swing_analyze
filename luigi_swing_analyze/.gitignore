@@ -1,0 +1,156 @@
+# より詳細なバージョンが必要な場合
+cat << 'EOF' > .gitignore-extended
+# === Dependencies ===
+node_modules/
+bower_components/
+jspm_packages/
+
+# === Build outputs ===
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.vuepress/dist/
+*.local
+
+# === Environment variables ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# === IDE and Editor files ===
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# === OS generated files ===
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# === Logs ===
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# === Testing ===
+coverage/
+*.lcov
+.nyc_output/
+.jest/
+
+# === Cache ===
+.npm
+.eslintcache
+.stylelintcache
+.cache/
+.parcel-cache/
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# === TypeScript ===
+*.tsbuildinfo
+*.tgz
+
+# === Temporary files ===
+tmp/
+temp/
+*.tmp
+*.temp
+
+# === Golf Swing Analyzer specific ===
+# センサーデータ
+sensor-data/
+swing-recordings/
+*.swingdata
+*.sensorlog
+
+# AI モデルファイル（大容量）
+models/*.bin
+models/*.onnx
+*.model
+
+# ユーザーデータ
+user-profiles/
+calibration-data/
+
+# デバッグファイル
+debug/
+*.debug
+*.trace
+
+# 性能測定ファイル
+performance/
+*.perf
+
+# 生成されたアセット
+generated/
+public/generated/
+EOF
